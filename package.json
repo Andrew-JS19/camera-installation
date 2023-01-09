@@ -1,5 +1,5 @@
 {
-  "name": "pointofsale",
+  "name": "camera-installation",
   "version": "1.0.0",
   "scripts": {
     "test": "node app",
