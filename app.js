@@ -1,0 +1,54 @@
+"use strict";
+const Path = require("path");
+const Hapi = require('@hapi/hapi');
+const Vision = require('@hapi/vision');
+const Cookie = require('@hapi/cookie');
+const Inert = require('@hapi/inert');
+const Settings = require('./src/settings');
+const winston = require('./src/logger');
+const moment = require('moment');
+const Routes = require('./src/lib/routes')
+//const Models = require('./src/lib/models');
+// let CurrentDate = moment(new Date()).format('YYYY-MM-DD HH:mm:ss');
+
+const init = async () => {
+
+    const server = new Hapi.Server({ 
+        port: Settings[Settings.env].port,
+        routes:{
+            files: {
+                relativeTo: Path.join(__dirname, '/static/public')
+            }
+        } 
+    });
+
+    await server.register([Inert,Vision]);
+    
+    server.views({
+        engines: { ejs: require("ejs") },
+        path: Path.join(__dirname, "/src/lib/views"),
+        compileOptions: {
+          pretty: false
+        },
+        isCached: Settings.env === "production"
+      });
+
+    server.route(Routes);
+    await server.start();
+    winston.info(`Server running in ${Settings.env} mode on : ${server.info.address}:${server.info.port}`);
+};
+
+
+process.on("unhandledRejection", err => {
+    try{
+        winston.error(err);
+        console.log(err);
+    }
+    catch{
+    console.log(err)
+    }
+
+    process.exit(err.code);
+  });
+
+  init();

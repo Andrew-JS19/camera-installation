@@ -1,0 +1,34 @@
+{
+  "name": "pointofsale",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "node app",
+    "start": "nodemon app"
+  },
+  "repository": "git+https://github.com/MannequinBanshee/Point-Of-Sale-System.git",
+  "keywords": [],
+  "author": "angelina <angelina.stone@dxdiag.co.za>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MannequinBanshee/Point-Of-Sale-System.git/issues"
+  },
+  "homepage": "https://github.com/MannequinBanshee/Point-Of-Sale-System.git#readme",
+  "description": "",
+  "dependencies": {
+    "@hapi/cookie": "^11.0.2",
+    "@hapi/hapi": "^20.2.2",
+    "@hapi/inert": "^7.0.0",
+    "@hapi/vision": "^7.0.0",
+    "bcrypt": "^5.0.1",
+    "canvas": "^2.10.1",
+    "dotenv": "^16.0.2",
+    "ejs": "^3.1.8",
+    "jsbarcode": "^3.11.5",
+    "moment": "^2.29.4",
+    "mongoose": "^6.6.1",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6",
+    "winston": "^3.8.1"
+  },
+  "main": "app.js"
+}
