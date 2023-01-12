@@ -1,10 +1,13 @@
 .demo10 {
     background: #C0BFBF;
-    padding: 30px 0
+    padding: 5%
   }
   
   .pricingTable10 {
-    text-align: center
+    text-align: center;
+    overflow: auto;
+    min-width:calc();
+
   }
   
   .pricingTable10 .pricingTable-header {
@@ -48,10 +51,11 @@
   .pricingTable10 .price-value {
     display: inline-block;
     position: relative;
-    font-size: 55px;
+    font-size: 30px;
     font-weight: 700;
     color: #09b1c5;
     transition: all .3s ease 0s
+    
   }
   
   .pricingTable10:hover .price-value {
@@ -59,7 +63,7 @@
   }
   
   .pricingTable10 .currency {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 700;
     position: absolute;
     top: 6px;
@@ -76,7 +80,7 @@
   }
   
   .pricingTable10 .pricing-content {
-    padding-top: 50px;
+    padding-top: 20%;
     background: #fff;
     position: relative
   }

@@ -14,6 +14,14 @@ module.exports =   [
   {
     // Static files
     method: "GET",
+    path: "/home",
+    options: {
+    },
+    handler: Home
+  },
+  {
+    // Static files
+    method: "GET",
     path: "/{Param*}",
     handler: {
       directory: {
