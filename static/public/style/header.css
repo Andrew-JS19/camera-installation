@@ -1,7 +1,16 @@
+
 @charset "UTF-8";
 .navigation {
   height: 70px;
-  background: #575656;
+  background: #575656;  
+  padding: 10px;   
+}
+
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
 }
 
 .brand {
@@ -12,6 +21,7 @@
   text-transform: uppercase;
   font-size: 1.4em;
 }
+
 .brand a,
 .brand a:visited {
   color: #ffffff;
@@ -20,23 +30,27 @@
 
 .nav-container {
   max-width: 1000px;
-  margin: 0 auto;
+  margin: 10px auto;
+  padding: 20px;
 }
 
 nav {
   float: right;
+  
 }
 nav ul {
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding-top: 10px;
 }
-nav ul li {
+
+ ul li {
   float: left;
   position: relative;
 }
-nav ul li a,
-nav ul li a:visited {
+
+ul li a,
+ul li a:visited {
   display: block;
   padding: 0 20px;
   line-height: 70px;
@@ -44,15 +58,34 @@ nav ul li a:visited {
   color: #ffffff;
   text-decoration: none;
 }
-nav ul li a:hover,
+
+ul li a:hover,
 nav ul li a:visited:hover {
   background: #09b1c5;
   color: #ffffff;
 }
+
+ul li ul.dropdown{
+  min-width: 100%; /* Set width of the dropdown */
+  background: #f2f2f2;
+  display: none;
+  position: absolute;
+  z-index: 999;
+  left: 0;
+}
+
+ul li:hover ul.dropdown{
+  display: block;	/* Display the dropdown */
+}
+ul li ul.dropdown li{
+  display: block;
+}
+
 nav ul li a:not(:only-child):after,
 nav ul li a:visited:not(:only-child):after {
   padding-left: 4px;
   content: " ▾";
+  padding-inline: 3px;
 }
 nav ul li ul li {
   min-width: 190px;
@@ -66,7 +99,7 @@ nav ul li ul li a {
   position: absolute;
   display: none;
   z-index: 1;
-  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 px 12px rgba(0, 0, 0, 0.15);
 }
 
 /* Mobile navigation */
@@ -155,4 +188,13 @@ article {
   max-width: 1000px;
   margin: 0 auto;
   padding: 10px;
+}
+
+.top {
+  text-decoration: none;
+  padding: 10px;
+  font-family: sans-serif;
+  color: #fff;
+  background: #000;
+  border-radius: 100px;
 }
