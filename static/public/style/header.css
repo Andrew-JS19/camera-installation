@@ -3,7 +3,9 @@
 .navigation {
   height: 70px;
   background: #575656;  
-  padding: 10px;   
+  padding: 10px; 
+  z-index: 1;  
+  height: 0vh;
 }
 
 #btn-back-to-top {
