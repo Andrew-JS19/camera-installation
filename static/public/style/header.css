@@ -4,8 +4,7 @@
   height: 70px;
   background: #575656;  
   padding: 10px; 
-  z-index: 1;  
-  height: 0vh;
+  z-index: 1;
 }
 
 #btn-back-to-top {
@@ -30,20 +29,10 @@
   text-decoration: none;
 }
 
-.nav-container {
-  max-width: 1000px;
-  margin: 10px auto;
-  padding: 20px;
-}
 
 nav {
   float: right;
   
-}
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding-top: 10px;
 }
 
  ul li {
@@ -54,8 +43,8 @@ nav ul {
 ul li a,
 ul li a:visited {
   display: block;
-  padding: 0 20px;
-  line-height: 70px;
+  padding: 0px 20px;
+  line-height: 50px;
   background: #575656;
   color: #ffffff;
   text-decoration: none;
@@ -89,9 +78,11 @@ nav ul li a:visited:not(:only-child):after {
   content: " ▾";
   padding-inline: 3px;
 }
+
 nav ul li ul li {
   min-width: 190px;
 }
+
 nav ul li ul li a {
   padding: 15px;
   line-height: 20px;
@@ -101,7 +92,7 @@ nav ul li ul li a {
   position: absolute;
   display: none;
   z-index: 1;
-  box-shadow: 0 px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 px 12px rgba(236, 19, 19, 0.15);
 }
 
 /* Mobile navigation */
@@ -124,9 +115,11 @@ nav ul li ul li a {
     width: 100%;
     padding: 70px 0 15px;
   }
+
   nav ul {
     display: none;
   }
+  
   nav ul li {
     float: none;
   }
@@ -134,6 +127,7 @@ nav ul li ul li a {
     padding: 15px;
     line-height: 20px;
   }
+  
   nav ul li ul li a {
     padding-left: 30px;
   }
@@ -154,6 +148,7 @@ nav ul li ul li a {
   cursor: pointer;
   padding: 10px 35px 16px 0px;
 }
+
 #nav-toggle span,
 #nav-toggle span:before,
 #nav-toggle span:after {
@@ -173,15 +168,19 @@ nav ul li ul li a {
 #nav-toggle span:after {
   bottom: -10px;
 }
+
 #nav-toggle.active span {
   background-color: transparent;
 }
+
 #nav-toggle.active span:before, #nav-toggle.active span:after {
   top: 0;
 }
+
 #nav-toggle.active span:before {
   transform: rotate(45deg);
 }
+
 #nav-toggle.active span:after {
   transform: rotate(-45deg);
 }

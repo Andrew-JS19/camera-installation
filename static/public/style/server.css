@@ -2,7 +2,7 @@ body {
   color: #7c7c7c;
   overflow: auto;
   background-color: #365765; /* For browsers that do not support gradients */
-  background-image: linear-gradient(#25d7e4 rgb(25, 58, 67));
+  background-image: linear-gradient(#25d7e4 rgb(25, 58, 67));  
 }
 
 .py-4 {
