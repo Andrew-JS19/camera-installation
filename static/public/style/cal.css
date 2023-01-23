@@ -1,8 +1,57 @@
 .demo10 {
-    background: #C0BFBF;
+    background: #6f7879;
     padding: 5%
   }
-  
+ 
+
+  .section-title {  
+    padding-top: 0px;    
+    padding-bottom: 0px;    
+    margin-top: 0px; 
+}
+
+.column{
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  margin-left: auto;
+  padding-top: 100px;
+  padding-right: 0px;
+  padding-left: 0px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;  
+}
+.section-gris-ai {
+  margin-top: 50px;
+  padding: 10px 5% 60px;
+  background-color: #fafafa;
+}
+
+.column-wrap-reversed.column-space {
+  margin-bottom: 140px;
+}
+
+.column-wrap-reversed {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  padding-right: 0px;
+  padding-left: 0px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  background-color: hsla(0, 0%, 98%, 0);
+}
+
+
+
   .pricingTable10 {
     text-align: center;
     overflow: auto;
@@ -27,7 +76,7 @@
     width: 16px;
     height: 16px;
     border-radius: 50%;
-    border: 1px solid #d9d9d8;
+    border: 1px solid #d8d8d9;
     position: absolute;
     bottom: 12px
   }
