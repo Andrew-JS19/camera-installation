@@ -71,9 +71,7 @@ ul li ul.dropdown{
 ul li:hover ul.dropdown{
   display: block;	/* Display the dropdown */
 }
-ul li ul.dropdown li{
-  display: block;
-}
+
 
 nav ul li a:not(:only-child):after,
 nav ul li a:visited:not(:only-child):after {
