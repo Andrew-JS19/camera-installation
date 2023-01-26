@@ -18,12 +18,12 @@
 
 .brand {
   position: justify;
-  padding-left: 80px;
+  padding-left: 50px;
   float: left;
-  line-height: 70px;
+  line-height: 50px;
   text-transform: uppercase;
   font-size: 1.4em;
-  margin: -10px
+  
 }
 
 .brand a,
@@ -34,9 +34,7 @@
 
 
 nav {
-  float: right;
-  
-  
+  float: right;   
 }
 
  ul li {
@@ -44,6 +42,7 @@ nav {
   position: relative;
 }
 
+/* nav tab spacing */
 ul li a,
 ul li a:visited {
   display: block;
@@ -85,6 +84,7 @@ nav ul li ul li {
   min-width: 190px;
 }
 
+/* .nav-dropdown */
 nav ul li ul li a {
   padding: 15px;
   line-height: 20px;

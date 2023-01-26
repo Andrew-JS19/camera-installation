@@ -1,5 +1,4 @@
-.demo10 {
-    background: #6f7879;
+.demo10 {   
     padding: 5%
   }
  
@@ -10,25 +9,34 @@
     margin-top: 0px; 
 }
 
-.button {
-  position: relative;
-  overflow: hidden;
-  height: 3rem;
-  padding: 0 2rem;
-  border-radius: 1.5rem;
-  background: #3d3a4e;
-  box-shadow: #201f1f;
+.description {
+    margin-top: 0px;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #464b55;  
+    padding-left: 35px;
+    padding-right: 35px;
+    text-align: center;  
+}
 
-  color: #fff;
+.button {
+    position: relative;
+    overflow: hidden;
+    height: 3rem;
+    padding: 0 2rem;
+    border-radius: 1.5rem;
+    background: #3d3a4e;
+    box-shadow: #201f1f;
+    color: #fff;
 }
 
 .button:hover::before {
-  transform: scaleX(1);
+    transform: scaleX(1);
 }
 
 .button-content {
-  position: relative;
-  z-index: 1;
+   position: relative;
+   z-index: 1;
 }
 
 .button::before {
@@ -53,7 +61,7 @@
   padding-right: 25px;
 }
 
-
+/* gallery */
 .column{
   display: flex;
   flex-direction: row-reverse;
@@ -158,6 +166,10 @@
 
   }
   
+.pricingTable {
+  background: none;
+}
+
   .pricingTable10 .pricingTable-header {
     padding: 20px 0;
     background: #4d4d4d;
