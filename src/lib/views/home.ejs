@@ -1,80 +1,92 @@
 <%- include('Header/Main'); %>
 
 <body>
-    <section class="main-section">
-        <div class="container">
-          <h2>
-            DXDIAG software solutions
-          </h2>
-          <h6>
-            We provide professional solutions with exceptional service.
-          </h6>
-          <div class="row">
-            <div class="col-lg-4 col-sm-6 fadeInLeft delay-05s animated" style="visibility: visible; animation-name: fadeInLeft;">
-              <div class="service-list">
-                <div class="service-list-col1">
-                  <i class="fa-eye">
-                  </i>
-                </div>
-                <div class="service-list-col2">
-                  <h3>
-                    Vision
-                  </h3>
-                  <p>
-                    Our vision is to form relationships with each and every client, providing recurring business through a combination of world class solutions, competitive pricing, and agile responses to their needs. 
-                  </p>
-                </div>
-              </div>
-              <div class="service-list">
-                <div class="service-list-col1">
-                  <i class="fa-bullseye">
-                  </i>
-                </div>
-                <div class="service-list-col2">
-                  <h3>
-                    Mission
-                  </h3>
-                  <p>
-                    Our mission is to deliver high quality software solutions to companies, small to large, for any vertical market by maintaining the highest support standards. 
-                  </p>
-                </div>
-              </div>
-              <div class="service-list">
-                <div class="service-list-col1">
-                  <i class="fa-money">
-                  </i>
-                </div>
-                <div class="service-list-col2">
-                  <h3>
-                    Values
-                  </h3>
-                  <p>
-                    Our values are centred around innovation, agility, honesty and loyalty. 
-                  </p>
-                </div>
-              </div>
-            </div>
-            <figure class="col-lg-8 col-sm-6 text-right fadeInUp delay-02s animated" style="visibility: visible; animation-name: fadeInUp;">
-              <div class="service-list" style="text-align:left">
-                <div class="service-list-col1">
-                  <i class="fa-info">
-                  </i>
-                </div>
-                <div class="service-list-col2">
-                  <h3>
-                    ABOUT 
-                  </h3>
-                  <p>
-                    Infomasters Software Solutions, based in Woodmead, Johannesburg, is a software development company specialising in retail, membership and hospitality solutions. The company was founded by Marcel Pugin and Oliver Hager in 2001 and has been going from strength to strength since its inception. With the recent acquisition of one of their dealers, Spectrum Retail, Infomasters Software Solutions has expanded on it's skilled team providing further expertise to its clients. 
-                  </p>
-                </div>
-              </div>
-              <img src="https://infomasters.co.za/img/infomasters-software-solutions-about2.png">
-            </figure>
+   
+<div class="container">
+  <div class="feature-content">
+    <div class="feature-title">
+      <p>Clean <span class="feature-and">&</span> Professional Software Solutions</p>
+    </div>
+    <div class="feature-desc">
+      <p>Providing High Quality Software and Server-side solutions</p>
+    </div>
+  </div>
+  <div class="content-desc">
+    <p>We provide <strong>first class</strong> web solutions for organizations and small businesses looking to make a <strong>big impact</strong> online. Our services include web design, online marketing campaigns, and search engine optimization.</p>
+  </div>
+  <div class="content">
+    <div class="row text-center">
+      <div class="col-md-4 col-xs-12">
+        <div class="colOne">
+          <div class="colOneT">
+            <h1>AI Security</h1>
+          </div>
+          <div class="colOneC">
+            <p>Technical means of ensuring infrastructure security are being integrated.Implementation of secure software development processes providing safe data migration to cloud solutions and ensuring data security, creating internal data security processes and providing control over infrastructure vulnerabilities. Conduction of infrastructure testing and detection of threats
+             </p>
+          </div>
+          <div class="colOneL">
+            <button class="btn btn-primary btn-block" id="Offers">Get More Details</button>
+            <script type="text/javascript">
+              document.getElementById("Offers").onclick = function () {
+                  location.href = "http://10.10.10.38:3000/camerapricing";
+              };
+          </script>          
           </div>
         </div>
-      </section>
-      
+      </div>
+      <div class="col-md-4 col-xs-12">
+        <div class="colTwo">
+          <div class="colTwoT">
+            <h1>Server-Hosting</h1>
+          </div>
+          <div class="colTwoC">
+            <p>Our managed IT service plans include custom hosting and cloud server environments, Service Desk support, and proactive backend solutions.
+              Our reporting solutions keep you up to date on as much information as your company requires. Wired-IT understands your hectic day-to-day operations needs, and our goal is to enable you to continue yielding higher returns on your products and services with minimal downtime due to IT issues.</p>
+          </div>
+          <div class="colTwoL">
+            <button class="btn btn-primary btn-block" id="Pricing">Get More Details</a>
+              <script type="text/javascript">
+                document.getElementById("Pricing").onclick = function () {
+                    location.href = "http://10.10.10.38:3000/serverpricing";
+                };
+            </script>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-xs-12">
+        <div class="colThree">
+          <div class="colThreeT">
+            <h1>Software Solutions</h1>
+          </div>
+          <div class="colThreeC">
+            <p>We can create custom software solutions based on best practices that will increase the efficiency of any business. We can develop tailored, complex, data-driven solutions for desktop, web, or mobile using an engineering and agile approach. We can provide full-service solutions ranging from relational database design to reporting and business intelligence.</p>
+          </div>
+          <div class="colThreeL">
+            <button class="btn btn-primary btn-block" id="Software">Get More Details</button>
+            <script type="text/javascript">
+              document.getElementById("Software").onclick = function () {
+                  location.href = "http://10.10.10.38:3000/softwarepricing";
+              };
+          </script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+  <div class="vertical-center">
+  <button class="bt" id="contact" style="display:block; margin: 0 auto;">
+    <span class="msg" id="msg"></span>
+    Contact Us
+</button>
+  
+  <script type="text/javascript">
+      document.getElementById("contact").onclick = function () {
+          location.href = "http://10.10.10.38:3000/contact";
+      };
+  </script>
+  
+  </div>
 </body>
   
 
