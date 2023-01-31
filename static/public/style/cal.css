@@ -12,8 +12,7 @@
 .description {
     margin-top: 0px;
     font-size: 1rem;
-    font-weight: 300;
-    color: #464b55;  
+    font-weight: 300;      
     padding-left: 35px;
     padding-right: 35px;
     text-align: center;  
@@ -61,6 +60,18 @@
   padding-right: 25px;
 }
 
+img {
+  border-radius: 25px;
+}
+
+.img-fluid{
+  border: #000;
+}
+
+.container {
+  color: grey;
+}
+
 /* gallery */
 .column{
   display: flex;
@@ -79,7 +90,7 @@
 .section-gris-ai {
   margin-top: 50px;
   padding: 10px 5% 60px;
-  background-color: #fafafa;
+  background-color: #ffffff;
 }
 
 .column-wrap-reversed.column-space {
