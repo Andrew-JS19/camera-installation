@@ -1,16 +1,16 @@
 "use strict";
-
+var Data = {"Contact":true};
 async function GetCameraPricingPage(req, h) {
 
-return h.view("Pages/Cameras/pricing");
+return h.view("Pages/Cameras/pricing",{"Data": Data});
 
 }
 
 async function GetCameraDemoPage(req, h) {
 
-    return h.view("Pages/Cameras/demopage");
+    return h.view("Pages/Cameras/demopage",{"Data": Data});
     
-    }
+}
     
 
 

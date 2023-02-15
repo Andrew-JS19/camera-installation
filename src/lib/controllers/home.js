@@ -3,6 +3,8 @@
 
 module.exports = async (req, h) => {
 
-    return h.view("home");
+
+var Data = {"Contact":true};
+    return h.view("home",{"Data": Data});
     
 };

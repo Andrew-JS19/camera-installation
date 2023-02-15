@@ -11,24 +11,26 @@ body {
   .contact_us {
     background-color: #f1f1f1;
     padding: 120px 0px;
-    
-  }
-  
+    width: 50%;
+    overflow: hidden;    
+    min-width: 100px;
+    width: 60%;    
+  }  
+
   .contact_inner {
     background-color: #fff;
     position: relative;
-    box-shadow: 15px 20px 44px #4d4d4d ;
     border-radius: 25px 25px 25px 25px;
   }
-  .contact_field {
-    padding: 60px 340px 90px 100px;
-  }
-  .right_contact_social_icon {
-    height: 100%;
-  }
   
+  .contact_field {
+    min-width: 200px;
+    padding: 60px 340px 90px 100px;    
+    overflow: hidden;    
+  }
+ 
   .contact_field h3 {
-    color: #4d4d4d;
+    color: #09b1c5;
     font-size: 40px;
     letter-spacing: px;
     font-weight: 600;
@@ -44,12 +46,12 @@ body {
   .contact_field .form-control {
     border-radius: 10px;
     border: none;
-    border-bottom: 1px solid rgb(138, 136, 136);
+    border-bottom: 1px solid #09b1c5;
   }
   .contact_field .form-control:focus {
     box-shadow: none;
     outline: none;
-    border-bottom: 3px solid #4d4d4d;
+    border-bottom: 3px solid #09b1c5;
   }
   .contact_field .form-control::placeholder {
     font-size: 13px;
@@ -58,12 +60,13 @@ body {
   
   .contact_info_sec {
     position: absolute;
-    background-color: #2d2d2d;
+    background-color: #09b1c5;
     right: 1px;
     top: 18%;
     height: 340px;
     color: #fff;
-    width: 340px;
+    width: 40%;
+    min-width: 300px;
     padding: 40px;
     border-radius: 25px 25px 25px 25px;
   }
@@ -88,7 +91,7 @@ body {
   }
   
   button.contact_form_submit {
-    background: linear-gradient(to top right, #4d4d4d -5%, #4d4d4d 100%);
+    background: linear-gradient(to top right, #4a85bd -5%, #09b1c5 100%);
     border: none;
     color: #fff;
     padding: 10px 15px;
@@ -105,20 +108,5 @@ body {
     background: #09b1c5
   }
 
-  .social_item_inner li {
-    list-style: none;
-  }
-  .social_item_inner li a {
-    color: #fff;
-    margin: 0px 15px;
-    font-size: 14px;
-  }
-  .social_item_inner {
-    padding-bottom: 10px;
-    border-radius: 25px 0 0 25px;
-  }
-  
 
-
-  
   

@@ -91,7 +91,7 @@ h3 {
 
 .section-header h3  { 
     font-size: 36px; 
-    color: #283d50; 
+    color: #09b1c5; 
     text-align: center; 
     font-weight: 500; 
     position: relative;
@@ -243,7 +243,7 @@ h4 {
 } 
 
 #about .about-container .title  { 
-    color: #333; 
+    color: #09b1c5; 
     font-weight: 700; 
     font-size: 32px;
 } 
@@ -291,7 +291,7 @@ a {
 } 
 
 #about .about-container .icon-box .title a  { 
-    color: #1395ec;
+    color: #09b1c5;
 } 
 
 a:hover { 

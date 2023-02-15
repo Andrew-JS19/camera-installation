@@ -1,95 +1,98 @@
 <%- include('Header/Main'); %>
 
 <body>
-    <div class="container">
-    <div class="feature-content">
-      <div class="feature-title">
-        <p>Clean <span class="feature-and">&</span> Professional Software Solutions</p>
-      </div>
-      <div class="feature-desc">
-        <p>Providing High Quality Software and Server-side solutions</p>
-      </div>
+    <div class="container pb20">
+      <div class="feature-content">
+        <div class="feature-title">
+          <p>Clean <span class="feature-and">&</span> Professional Software Solutions</p>
+        </div>
+        <div class="feature-desc">
+          <p>Providing High Quality Software and Server-side solutions</p>
+        </div>
+        <div class="content-desc">
+          <p>We provide <strong>first class</strong> web solutions for organizations and small businesses looking to make a <strong>big impact</strong> online. Our services include web design, online marketing campaigns, and search engine optimization.</p>
+        </div>
+      </div>    
     </div>
-    <div class="content-desc">
-      <p>We provide <strong>first class</strong> web solutions for organizations and small businesses looking to make a <strong>big impact</strong> online. Our services include web design, online marketing campaigns, and search engine optimization.</p>
-    </div>
+    
+    <section class="we-offer-area text-center bg-gray">
+      <div class="container">
+        <div class="row">
+    <div class="col-md-12">
 
-  <div class="content">
-    <div class="row text-center">
-      <div class="col-md-4 col-xs-12">
-        <div class="colOne">
-          <div class="colOneT">
-            <h1>AI Security</h1>
-          </div>
-          <div class="colOneC">
-            <p>Technical means of ensuring infrastructure security are being integrated.Implementation of secure software development processes providing safe data migration to cloud solutions and ensuring data security, creating internal data security processes and providing control over infrastructure vulnerabilities. Conduction of infrastructure testing and detection of threats
-             </p>
-          </div>
-          <div class="colOneL">
-            <button class="btn btn-primary btn-block" id="Offers">Get More Details</button>
-            <script type="text/javascript">
-              document.getElementById("Offers").onclick = function () {
-                  location.href = "http://10.10.10.38:3000/camerapricing";
-              };
-          </script>          
-          </div>
+    <div class="row our-offer-items less-carousel">
+      <div class="col-md-4 col-sm-6">
+        <div class="item">
+          <i class="fas fa-pen-fancy">
+          </i>
+          <h4>
+            AI Security
+          </h4>
+          <p>
+            Technical means of ensuring infrastructure security are being integrated.Implementation of secure software development processes providing safe data migration to cloud solutions and ensuring data security, creating internal data security processes and providing control over infrastructure vulnerabilities. Conduction of infrastructure testing and detection of threats
+          </p>          
+        </div>
+        <div class="item-button">
+          <span id="Cameras" class="h5 w3-center">Get More Details</span>
+        </div>
+        <script type="text/javascript">
+          document.getElementById("Cameras").onclick = function () {
+              location.href = "camerapricing";
+          };
+      </script>        
+      </div>
+      
+      
+      <div class="col-md-4 col-sm-6">
+        <div class="item">
+          <i class="fas fa-dharmachakra">
+          </i>
+          <h4>
+            Server-Hosting
+          </h4>
+          <p>
+           IT service plans include custom hosting and cloud server environments, Service Desk support, and proactive backend solutions.
+            Our reporting solutions keep you up to date on as much information as your company requires. Our goal is to enable you to continue yielding higher returns on your products and services with minimal downtime due to IT issues.
+          </p>          
+        </div>
+        <div class="item-button">
+          <span id="Pricing" class="h5 w3-center">Get More Details</span>
+        </div>
+          <script type="text/javascript">
+            document.getElementById("Pricing").onclick = function () {
+                location.href = "serverpricing";
+            };
+        </script>        
+      </div>
+            
+      <div class="col-md-4 col-sm-6 equal-height">
+        <div class="item">
+          <i class="fas fa-tasks">
+          </i>
+          <h4>
+            Software Solutions
+          </h4>
+          <p>
+            We can create custom software solutions based on best practices that will increase the efficiency of any business. We can develop tailored, complex, data-driven solutions for desktop, web, or mobile using an engineering and agile approach. We can provide full-service solutions ranging from relational database design to reporting and business intelligence.
+          </p>          
+        </div>
+        <div class="item-button">
+          <span id="Software" class="h5 w3-center">Get More Details</span>
+        </div>
+          <script type="text/javascript">
+            document.getElementById("Software").onclick = function () {
+                location.href = "softwarepricing";
+            };
+        </script>
         </div>
       </div>
-      <div class="col-md-4 col-xs-12">
-        <div class="colTwo">
-          <div class="colTwoT">
-            <h1>Server-Hosting</h1>
-          </div>
-          <div class="colTwoC">
-            <p>Our managed IT service plans include custom hosting and cloud server environments, Service Desk support, and proactive backend solutions.
-              Our reporting solutions keep you up to date on as much information as your company requires. Wired-IT understands your hectic day-to-day operations needs, and our goal is to enable you to continue yielding higher returns on your products and services with minimal downtime due to IT issues.</p>
-          </div>
-          <div class="colTwoL">
-            <button class="btn btn-primary btn-block" id="Pricing">Get More Details</a>
-              <script type="text/javascript">
-                document.getElementById("Pricing").onclick = function () {
-                    location.href = "http://10.10.10.38:3000/serverpricing";
-                };
-            </script>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 col-xs-12">
-        <div class="colThree">
-          <div class="colThreeT">
-            <h1>Software Solutions</h1>
-          </div>
-          <div class="colThreeC">
-            <p>We can create custom software solutions based on best practices that will increase the efficiency of any business. We can develop tailored, complex, data-driven solutions for desktop, web, or mobile using an engineering and agile approach. We can provide full-service solutions ranging from relational database design to reporting and business intelligence.</p>
-          </div>
-          <div class="colThreeL">
-            <button class="btn btn-primary btn-block" id="Software">Get More Details</button>
-            <script type="text/javascript">
-              document.getElementById("Software").onclick = function () {
-                  location.href = "http://10.10.10.38:3000/softwarepricing";
-              };
-          </script>
-          </div>
-        </div>
-      </div>
+      
     </div>
   </div> 
-  <div class="vertical-center">
-  <button class="bt" id="contact" style="display:block; margin: 0 auto;">
-    <span class="msg" id="msg"></span>
-    Contact Us
-</button>
   
-  <script type="text/javascript">
-      document.getElementById("contact").onclick = function () {
-          location.href = "http://10.10.10.38:3000/contact";
-      };
-  </script>
-  
-  </div>
+      </div>
+    </section>
 </body>
-  
-
   
 
 <%- include('Footer/Main'); %>

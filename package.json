@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "test": "node app",
-    "start": "nodemon app"
+    "start": "nodemon app",
+    "Kill": "pkill -f node"
   },
   "repository": "git+https://github.com/MannequinBanshee/Point-Of-Sale-System.git",
   "keywords": [],

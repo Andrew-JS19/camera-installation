@@ -4,17 +4,19 @@
   height: 70px;
   background: #575656;  
   padding: 10px; 
-  z-index: 1;
+  z-index: 1; 
 }
 
 #btn-back-to-top {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  display: none;
+  display: none;  
 }
 
-.content {margin-top: -20px;}
+.content {
+  margin-top: -20px;
+}
 
 .brand {
   position: justify;
@@ -31,7 +33,6 @@
   color: #ffffff;
   text-decoration: none;
 }
-
 
 nav {
   float: right;   
@@ -187,7 +188,7 @@ nav ul li ul li a {
   transform: rotate(-45deg);
 }
 
-article {
+.article {
   max-width: 1000px;
   margin: 0 auto;
   padding: 10px;
@@ -200,4 +201,17 @@ article {
   color: #fff;
   background: #000;
   border-radius: 100px;
+}
+
+footer {
+  background-color: #09b1c5;
+  font-size: 17px;
+  padding: 15px 5px;
+  color: #ffffff;
+  text-align: center;
+  flex-grow: 1;
+  min-width: 100%;
+  z-index: auto;
+  margin-top: -0px;
+  bottom: 0;
 }
